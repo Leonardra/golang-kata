@@ -3,5 +3,16 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello, World!")
+
+	//Using the var keyword to delare a variable
+	var whatToSay string = "Hello, World! - Var Keyword"
+	greet(whatToSay)
+
+	//Using the := shorthand to declare a variable
+	shortHandGreeting := "Hello, World! - Short Hand"
+	greet(shortHandGreeting)
+}
+
+func greet(greeting string) {
+	fmt.Println(greeting)
 }
