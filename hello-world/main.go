@@ -9,6 +9,7 @@ func main() {
 	greet(whatToSay)
 
 	//Using the := shorthand to declare a variable
+	//It implicitly infers the type by the value assigned
 	shortHandGreeting := "Hello, World! - Short Hand"
 	greet(shortHandGreeting)
 }
