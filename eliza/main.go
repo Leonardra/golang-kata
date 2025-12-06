@@ -12,6 +12,14 @@ func main() {
 	var introPrompt string = doctor.DisplayIntroPrompt()
 	fmt.Println(introPrompt)
 
-	userInput, _ := reader.ReadString('\n')
-	fmt.Printf("You entered: %s", userInput)
+	for {
+		fmt.Print("-> ")
+		userInput, _ := reader.ReadString('\n')
+		if userInput == "exit" {
+			break
+		} else {
+			fmt.Printf("You entered: %s", userInput)
+		}
+	}
+
 }
